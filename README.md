@@ -1,11 +1,11 @@
-#Cracker
+# Cracker
 
 A simple dictionary based attack script for cracking un-shadowed linux password hashes.
 Developed in python. Expected to work on Linux.
 - note: Will **NOT** work on windows due to issues with multiprocessing.
 - note: All files for set-up or execution are located at root of cracker folder.
 
-##Features
+## Features
 
 - Contains implementation for all Linux Hashes (md5, blowfish, eksblowfish, sha256, sha512)
     - Tested and verified for sha512
@@ -15,12 +15,12 @@ Developed in python. Expected to work on Linux.
     - note: allows unrestricted core usage. may lead to near 100% CPU utilization.
 - Dictionary and password files are searched relative to current working directory
 
-##Dependencies:
+## Dependencies:
 
 - Python 3 
 - passlib
 
-##Setup
+## Setup
 
 - Easiest way to install all dependencies is to run the setup script 
 ```setup_script
@@ -30,7 +30,7 @@ Developed in python. Expected to work on Linux.
 
 note: May prompt for sudo password during installation
 
-##Usage
+## Usage
 
 ```cracker_script
 ./cracker <dictionary_file> <linux_password_file>
@@ -40,11 +40,11 @@ or you can directly run the python file with
 python3 main.py <dictionary_file> <linux_password_file>
 ```
 
-##Sample Output
+## Sample Output
 ![Sample Output](images/cracker_sample_output.JPG)
 
 
-##TODO
+## TODO
 
 - Windows compatibility
 - Error Handling
